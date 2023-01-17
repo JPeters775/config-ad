@@ -128,13 +128,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <br />
 
-<img src="https://i.imgur.com/fRexiM0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
-
 <img src="https://i.imgur.com/20i3Squ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <img src="https://i.imgur.com/yu24n4D.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 <h3>Conclusion</h3>
 <p>
-
+Thank you for reading my tutorial. I hope this helps you.
 </p>
