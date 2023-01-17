@@ -36,43 +36,23 @@ This tutorial outlines the implementation of on-premises Active Directory within
 -Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a
 -Ensure that both VMs are in the same Vnet (you can check the topology with Network Watcher
 </p>
-<p>
-<img src="https://i.imgur.com/nW7uDSD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<br />
-<img src="https://i.imgur.com/oKu8W9e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nW7uDSD.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <br />
 
-<p>
-<img src="https://i.imgur.com/YCsaMmL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <h3>Ensure Connectivity between the Client and Domain Controller</h3>
 <p>
 -Login to Client-1 with Remote Desktop and ping DC-1’s private IP address with ping -t <ip address> (perpetual ping)
 -Login to the Domain Controller and enable ICMPv4 in on the local windows Firewall
 -Check back at Client-1 to see the ping succeed
 </p>
+
+<img src="https://i.imgur.com/YCsaMmL.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/v8fboCw.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/gTDvkt5.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 
-<p>
-<img src="https://i.imgur.com/v8fboCw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/gTDvkt5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/WwJOWZm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <h3>Install Active Directory</h3>
 <p>
 -Login to DC-1 and install Active Directory Domain Services
@@ -81,18 +61,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/sGFXDov.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/mwNtsvz.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+<img src="https://i.imgur.com/WwJOWZm.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/sGFXDov.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/mwNtsvz.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
 
-<p>
-<img src="https://i.imgur.com/a8B52tj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 <h3>Create an Admin and Normal User Account in Active Directory</h3>
 <p>
 -In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
@@ -101,13 +76,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 -Add jane_admin to the “Domain Admins” Security Group
 -Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”
 -User jane_admin as your admin account from now on
-
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/1VypD12.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
+<img src="https://i.imgur.com/a8B52tj.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/1VypD12.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/FkdeJ17.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/7BoFkvF.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
 <h3>Join Client-1 to your domain</h3>
 <p>
 -From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
@@ -119,7 +99,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br />
 
 <p>
-<img src="https://i.imgur.com/FkdeJ17.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/X41fWBI.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/gdPoTkv.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
 </p>
 <h3>Setup Remote Desktop for non-administrative users on Client-1</h3>
 <p>
@@ -131,10 +114,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <br />
+<img src="https://i.imgur.com/J2kUHcF.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
-<p>
-<img src="https://i.imgur.com/a8B52tj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
 <h3>Create a bunch of additional users and attempt to log into Client-1 with one of the users</h3>
 <p>
 -Login to DC-1 as jane_admin
@@ -143,6 +125,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 -Run the script and observe the accounts being created
 -When finished, open ADUC and observe the accounts in the appropriate OU
 -Attempt to log into Client-1 with one of the accounts (take note of the password in the script)
-
 </p>
 <br />
+
+<img src="https://i.imgur.com/fRexiM0.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/20i3Squ.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/yu24n4D.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+
+<h3>Conclusion</h3>
+<p>
+
+</p>
